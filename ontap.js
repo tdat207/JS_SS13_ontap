@@ -74,10 +74,6 @@ const displayBookings = (bookings) => {
   }
 
   //    Duyệt mảng
-  //    1. CIN-001 - Nguyễn Văn An - Ánh Trăng Cuối Phố
-  //     SL: 2 | Giá: 90000 | Tổng TT: 194400
-  //    Tổng: 3 đơn đặt vé – Doanh thu: 1185840
-
   let total = 0;
   for (let i = 0; i < bookings.length; i++) {
     // In ra thông tin
@@ -89,8 +85,6 @@ const displayBookings = (bookings) => {
 
     // Cộng dồn tiền
     total += bookings[i].totalAmount;
-    // Lần 1: total = 0 + 194400
-    // Lần 2: total = 194400 + 349920
   }
 
   //    Tin ra tổng vé kèm theo tổng tiền
